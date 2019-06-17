@@ -1,1 +1,18 @@
 /* Global CSS file */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #001935;
+}
+#pageContainer {
+	width: 95%;
+	height: 100%;
+	margin: auto;
+}
+#pageContainer img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
