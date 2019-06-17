@@ -5,14 +5,28 @@
 }
 html {
 	background: #001935;
+	height: 100%;
+}
+body {
+
+	height: 100%;
 }
 #pageContainer {
-	width: 95%;
+	display: table;
 	height: 100%;
-	margin: auto;
+	width: 80%;
+	margin: auto
 }
-#pageContainer img {
+#pageContainer #verticalAlign {
+	display: table-cell;
+	vertical-align: middle;
+}
+#pageContainer #verticalAlign img {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+#imageInfo h1 {
+	display: inline-block;
+	font-size: 1em;
 }
