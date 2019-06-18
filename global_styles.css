@@ -8,25 +8,70 @@ html {
 	height: 100%;
 }
 body {
-
 	height: 100%;
 }
 #pageContainer {
 	display: table;
 	height: 100%;
-	width: 80%;
+	width: 90%;
 	margin: auto
 }
 #pageContainer #verticalAlign {
 	display: table-cell;
 	vertical-align: middle;
+	position: relative;
 }
 #pageContainer #verticalAlign img {
 	display: block;
 	width: 100%;
 	height: auto;
+	z-index: 1;
 }
+/*
+	—————————————————————————— INFORMATION SECTION
+*/
 #imageInfo h1 {
 	display: inline-block;
 	font-size: 1em;
+	width: 32%;
+}
+#imageInfo #imageDescription {
+	text-align: center;
+}
+#imageInfo #characterInfo {
+	text-align: right;
+}
+/*
+	—————————————————————————— NAVIGATION SECTION
+*/
+#verticalAlign .characterNavigation {
+	position: absolute;
+	left: 0%;
+	top: 50%;
+	z-index: 10;
+}
+#verticalAlign .characterNavigation a img {
+	border: none;
+}
+#verticalAlign .navigationArrow {
+	position: absolute;
+	top: 47%;
+	z-index: 5;
+	height: inherit;
+	text-decoration: none;
+}
+	#verticalAlign .navigationArrow a {
+		height: 200%;	
+		display: block;	
+		text-decoration: none;
+		font-size: 3em;
+		color: grey;
+		opacity: .7;
+	}
+
+#verticalAlign #rightArrow {
+	right: -1%;
+}
+#verticalAlign #leftArrow {
+	left: -1%;
 }
