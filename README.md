@@ -1,2 +1,3 @@
-# CAA_Website
-A choose your own adventure through the city of Nirvana
+## Welcome to Nirvana Stories
+
+This is a site for the Young to Young series of classes at CAA in Hangzhou, China. 
