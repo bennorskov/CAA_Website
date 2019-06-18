@@ -1,0 +1,4 @@
+/* Global Javascriptin */
+function ready() {
+	
+}

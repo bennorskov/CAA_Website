@@ -4,35 +4,37 @@
 	<title>Nirvana Stories</title>
 	<meta charset="utf-8">
 	<link href="global_styles.css" rel="stylesheet" type="text/css">
+	<script type="text/Javascript" src="globalJS.js"></script>
 </head>
-<body>
+<body onload="ready();">
 <div id="pageContainer">
 <div id="verticalAlign">
 	<!-- —————————————————————————————————— -->
-	<!-- Main Image Below -->
+	<!-- Please don't edit above this line unless you know what you are doing -->
+	<!-- Main Image:  -->
 	<!-- —————————————————————————————————— -->
-	<img id="mainImage" src="testImages/city4.jpg">
+	<img id="mainImage" src="globalImages/city2.jpg">
 	
 	<!-- —————————————————————————————————— -->
 	<!-- Paths to Other Characters -->
 	<!-- —————————————————————————————————— -->
-	<a class="characterNavigation" style="left: 30%; top: 20%;" href="#"><img src="testImages/pathTouch.gif"></a>
-	<a class="characterNavigation" style="left: 70%; top: 83%;" href="#"><img src="testImages/pathTouch.gif"></a>
+	<a class="characterNavigation" style="left: 30%; top: 20%;" href="#"><img src="globalImages/pathTouch.gif"></a>
+	<a class="characterNavigation" style="left: 70%; top: 63%;" href="#"><img src="globalImages/pathTouch.gif"></a>
 
 	<!-- —————————————————————————————————— -->
 	<!-- Story Navigation -->
 	<!-- —————————————————————————————————— -->
 	<div id="leftArrow" class="navigationArrow">
-		<a href="#"><</a>
+		<a href="#"><span id="arrowFlip">&#9656;</span></a>
 	</div>
 	<div id="rightArrow" class="navigationArrow">
-		<a href="#">></a>
+		<a href="#">&#9656;</a>
 	</div>
 
 	<!-- —————————————————————————————————— -->
 	<!-- Image Information -->
 	<!-- —————————————————————————————————— -->
-	<div id="imageInfo" style="color: #444;">
+	<div id="imageInfo">
 		<h1 id="artistName">Ben Norskov</h1>
 		<h1 id="imageDescription">A Cityscape</h1>
 		<h1 id="characterInfo">联系程度看读者自己的理解</h1>

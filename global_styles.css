@@ -4,8 +4,9 @@
 	padding: 0;
 }
 html {
-	background: #001935;
+	background: #001026;
 	height: 100%;
+	font-family: sans-serif;
 }
 body {
 	height: 100%;
@@ -25,6 +26,7 @@ body {
 	display: block;
 	width: 100%;
 	height: auto;
+	position: relative;
 	z-index: 1;
 }
 /*
@@ -33,7 +35,9 @@ body {
 #imageInfo h1 {
 	display: inline-block;
 	font-size: 1em;
-	width: 32%;
+	width: 33%;
+	color: #719298;
+	font-weight: normal;
 }
 #imageInfo #imageDescription {
 	text-align: center;
@@ -52,26 +56,30 @@ body {
 }
 #verticalAlign .characterNavigation a img {
 	border: none;
+	width: 150%;
+	height: 150%;
 }
 #verticalAlign .navigationArrow {
 	position: absolute;
 	top: 47%;
 	z-index: 5;
-	height: inherit;
 	text-decoration: none;
 }
 	#verticalAlign .navigationArrow a {
-		height: 200%;	
-		display: block;	
 		text-decoration: none;
 		font-size: 3em;
-		color: grey;
-		opacity: .7;
+		color: #719298;
+		opacity: .5;
 	}
 
-#verticalAlign #rightArrow {
-	right: -1%;
-}
-#verticalAlign #leftArrow {
-	left: -1%;
-}
+	#verticalAlign #rightArrow {
+		right: -1%;
+	}
+	#verticalAlign #leftArrow {
+		left: -1%;
+	}
+		#verticalAlign #leftArrow #arrowFlip {
+			display: block;
+			transform: scaleX(-1);
+			opacity: .5;
+		}
