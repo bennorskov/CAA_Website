@@ -48,16 +48,19 @@ body {
 /*
 	—————————————————————————— NAVIGATION SECTION
 */
-#verticalAlign .characterNavigation {
+#verticalAlign a.characterNavigation {
 	position: absolute;
+	display: block;
 	left: 0%;
 	top: 50%;
 	z-index: 10;
 }
-#verticalAlign .characterNavigation a img {
+#pageContainer #verticalAlign a.characterNavigation img {
 	border: none;
-	width: 150%;
-	height: 150%;
+	width: 100px;
+	height: 100px;
+	opacity: .8;
+
 }
 #verticalAlign .navigationArrow {
 	position: absolute;
@@ -67,16 +70,16 @@ body {
 }
 	#verticalAlign .navigationArrow a {
 		text-decoration: none;
-		font-size: 3em;
+		font-size: 10em;
 		color: #719298;
 		opacity: .5;
 	}
 
 	#verticalAlign #rightArrow {
-		right: -1%;
+		right: -5%;
 	}
 	#verticalAlign #leftArrow {
-		left: -1%;
+		left: -5%;
 	}
 		#verticalAlign #leftArrow #arrowFlip {
 			display: block;
