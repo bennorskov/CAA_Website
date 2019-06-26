@@ -45,13 +45,17 @@ function animate() {
 }
 function removeUnsetElements() {
 	var characterInfo = document.getElementById("characterInfo");
-	if (characterInfo != null && characterInfo.innerText.indexOf("This Character") != -1) characterInfo.remove();
+	if (characterInfo != null && characterInfo.innerText.indexOf("This Character is A") != -1) {
+		characterInfo.innerText = " ";
+	}
 
 	var artistName = document.getElementById("artistName");
-	if (artistName != null && artistName.innerText.indexOf("Norskov") != -1) artistName.remove();
+	if (artistName != null && artistName.innerText.indexOf("Norskov") != -1) {
+		artistName.innerText = " ";
+	}
 
 	var imageDescription = document.getElementById("imageDescription");
 	if (imageDescription != null && imageDescription.innerText.indexOf("Cityscape") != -1) {
-		imageDescription.remove();
+		imageDescription.innerText = " ";
 	}
 }
