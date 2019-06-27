@@ -17,7 +17,7 @@ function ready() {
 	characterNavs = document.getElementsByClassName("characterNavigation");
 	for (var i = characterNavs.length - 1; i >= 0; i--) {
 		if(characterNavs[i].getAttribute("href").indexOf("studentname") != -1) {
-			characterNavs[i].remove();
+			characterNavs[i].style.display = 'none';
 		} else {
 			doAnimate = true;
 			sequencers[i] = document.createElement("img");
