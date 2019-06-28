@@ -7,6 +7,7 @@ var doAnimate = false;
 var imageFrames = [];
 function ready() {
 	removeUnsetElements();
+	insertHomeIcon();
 	// Set up image file names
 	for (var i = 0; i<maxNumImages; i++) {
 		//myImages[i] = new Image(400, 400);
@@ -18,6 +19,7 @@ function ready() {
 	for (var i = characterNavs.length - 1; i >= 0; i--) {
 		if(characterNavs[i].getAttribute("href").indexOf("studentname") != -1) {
 			characterNavs[i].style.display = 'none';
+
 		} else {
 			doAnimate = true;
 			sequencers[i] = document.createElement("img");
@@ -42,6 +44,17 @@ function animate() {
 		};
 	}
 	window.requestAnimationFrame(animate);
+}
+function insertHomeIcon() {
+	var home = document.createElement("img");
+	home.src = "../../globalImages/homeIcon.png";
+	var link = document.createElement("a");
+	link.href = '../../index.html';
+	link.appendChild(home);
+	link.id = "homeLink";
+
+	var verticalAlign = document.getElementById("verticalAlign");
+	verticalAlign.appendChild(link); 
 }
 function removeUnsetElements() {
 	var characterInfo = document.getElementById("characterInfo");

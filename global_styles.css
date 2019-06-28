@@ -33,11 +33,12 @@ body {
 	—————————————————————————— INFORMATION SECTION
 */
 #imageInfo h1 {
+	padding-top: 5px;
 	display: inline-block;
-	font-size: 1em;
+	font-size: 24px;
 	width: 33%;
 	color: #719298;
-	font-weight: normal;
+	font-weight: bold;
 }
 #imageInfo #imageDescription {
 	text-align: center;
@@ -64,25 +65,39 @@ body {
 }
 #verticalAlign .navigationArrow {
 	position: absolute;
-	top: 47%;
+	top: 44%;
 	z-index: 5;
 	text-decoration: none;
 }
-	#verticalAlign .navigationArrow a {
+	#pageContainer #verticalAlign div.navigationArrow a {
 		text-decoration: none;
-		font-size: 10em;
+		font-size: 96pt;
 		color: #719298;
-		opacity: .5;
+		opacity: 1;
 	}
 
 	#verticalAlign #rightArrow {
-		right: -5%;
+		right: -4%;
 	}
 	#verticalAlign #leftArrow {
-		left: -5%;
+		left: -4%;
 	}
 		#verticalAlign #leftArrow #arrowFlip {
 			display: block;
 			transform: scaleX(-1);
-			opacity: .5;
+			opacity: 1;
 		}
+
+/*
+	—————————————————————————— HOME BUTTON
+*/ 
+#homeLink {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 50%;
+	opacity: .8;
+}
