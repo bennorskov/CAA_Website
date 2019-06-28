@@ -1,0 +1,30 @@
+/* Local CSS file */
+html {
+	/* Change the color of your background */
+	background: #001935;
+}
+/*
+	—————————————————————————— INFORMATION SECTION
+*/
+#imageInfo h1 {
+}
+#imageInfo #artistName {
+}
+#imageInfo #imageDescription {
+}
+#imageInfo #characterInfo {
+}
+/*
+	—————————————————————————— NAVIGATION SECTION
+*/
+#verticalAlign .navigationArrow a {
+/* Change the navigation arrow's color and size */
+	text-decoration: none;
+	font-size: 3em;
+	color: #719298;
+	opacity: .5;
+}
+#verticalAlign #rightArrow {
+}
+#verticalAlign #leftArrow {
+}

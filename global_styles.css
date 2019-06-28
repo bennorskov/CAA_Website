@@ -101,3 +101,6 @@ body {
 	left: 50%;
 	opacity: .8;
 }
+#verticalAlign.firstPage #homeLink {
+	display: none;
+}
